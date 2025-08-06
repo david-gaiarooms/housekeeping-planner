@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import json
 from datetime import date
-from utils.load_data import load_json
 from utils.planificador_turnos import planificar_turnos
 import plotly.express as px
 
@@ -10,6 +9,10 @@ st.set_page_config(page_title="Planificador de Turnos", layout="wide")
 st.title("🧹 Planificador de turnos - Limpieza de hoteles")
 
 # Cargar datos base
+def load_json(path):
+    with open(path, 'r', encoding='utf-8') as f:
+        return json.load(f)
+
 hoteles = load_json("data/hoteles.json")
 tiempos = load_json("data/tiempos_desplazamiento.json")
 empleados = load_json("data/empleados.json")
@@ -17,7 +20,6 @@ empleados = load_json("data/empleados.json")
 # Subida de carga de trabajo
 st.subheader("📤 Subir carga de trabajo (CSV o JSON)")
 archivo_carga = st.file_uploader("Archivo:", type=["csv", "json"])
-
 cargas = []
 
 if archivo_carga:
@@ -56,49 +58,54 @@ if cargas:
 
             st.success("✅ Planificación realizada")
 
-            # Tabla por empleado
-            st.subheader("📋 Turnos por empleado")
-            empleados_asignados = {}
-            for asignacion in asignaciones:
-                nombre = asignacion["empleado"] or "Sin asignar"
-                empleados_asignados.setdefault(nombre, []).append(asignacion)
+            # Tabla por empleado (desde ocupado)
+            st.subheader("📋 Turnos por empleado (incluye desplazamientos)")
+            for empleado in empleados:
+                st.markdown(f"### 🧑‍💼 {empleado['nombre']}")
+                if "ocupado" in empleado and empleado["ocupado"]:
+                    df_emp = pd.DataFrame(empleado["ocupado"])
+                    df_emp["tipo"] = df_emp["hotel"].apply(
+                        lambda h: "Desplazamiento" if isinstance(h, str) and h.startswith("DESPLAZAMIENTO") else "Limpieza"
+                    )
+                    df_emp = df_emp.sort_values("inicio")
+                    st.dataframe(df_emp[["inicio", "fin", "hotel", "tipo"]])
+                else:
+                    st.write("Sin asignaciones.")
 
-            for empleado, tareas in empleados_asignados.items():
-                st.markdown(f"### 🧑‍💼 {empleado}")
-                df_emp = pd.DataFrame(tareas)
-                st.dataframe(df_emp[["hotel", "inicio", "duracion", "acompañado_por"]])
-
-            # Timeline completo incluyendo desplazamientos
-            st.subheader("📊 Línea de tiempo con desplazamientos")
+            # Timeline visual
+            st.subheader("📊 Línea de tiempo con desplazamientos destacados")
 
             ocupaciones = []
             for e in empleados:
                 if "ocupado" in e:
-                    for bloque in e["ocupado"]:
+                    for b in e["ocupado"]:
                         ocupaciones.append({
                             "empleado": e["nombre"],
-                            "hotel": bloque["hotel"],
-                            "start": bloque["inicio"],
-                            "end": bloque["fin"]
+                            "hotel": b["hotel"],
+                            "start": b["inicio"],
+                            "end": b["fin"],
+                            "tipo": "Desplazamiento" if isinstance(b["hotel"], str) and b["hotel"].startswith("DESPLAZAMIENTO") else "Limpieza"
                         })
 
             df_timeline = pd.DataFrame(ocupaciones)
-            df_timeline["color"] = df_timeline["hotel"].apply(
-                lambda h: "Desplazamiento" if isinstance(h, str) and h.startswith("DESPLAZAMIENTO") else h
-            )
             df_timeline["tarea"] = df_timeline["hotel"]
+
+            color_map = {
+                "Desplazamiento": "#B0B0B0",  # gris claro
+                "Limpieza": "#1f77b4"         # azul base
+            }
 
             fig = px.timeline(
                 df_timeline,
                 x_start="start",
                 x_end="end",
                 y="empleado",
-                color="color",
-                text="tarea"
+                color="tipo",
+                text="tarea",
+                color_discrete_map=color_map
             )
             fig.update_yaxes(autorange="reversed")
-            fig.update_layout(title="🕒 Línea de tiempo con desplazamientos", height=600)
-
+            fig.update_layout(title="🕒 Línea de tiempo con limpieza y desplazamientos", height=600)
             st.plotly_chart(fig, use_container_width=True)
 
             # Exportar resultado
