@@ -1,1 +1,380 @@
-[{"nombre": "Hotel Central", "ciudad": "Salamanca", "hora_min_inicio": "10:00", "hora_checkin": "14:00"}]
+[
+  {
+    "nombre": "Hostal Gonzala",
+    "ciudad": "Salamanca",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Alevia",
+    "ciudad": "Salamanca",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "BeSalamanca",
+    "ciudad": "Salamanca",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Boutique Salamanca",
+    "ciudad": "Salamanca",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Estudios Sierra de Francia",
+    "ciudad": "Béjar",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Ronda de Navarra",
+    "ciudad": "Béjar",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Áticos La Aliseda",
+    "ciudad": "Béjar",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Hosteria Sara",
+    "ciudad": "Salamanca",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Aptos Calle Arriba",
+    "ciudad": "Salamanca",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Albero",
+    "ciudad": "Salamanca",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Apartamentos Horoko",
+    "ciudad": "Madrid",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Salamanca Centro Aptos",
+    "ciudad": "Salamanca",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Hotel Melibea",
+    "ciudad": "Salamanca",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Aptos Principe 7",
+    "ciudad": "Madrid",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Hostal Carmen",
+    "ciudad": "Salamanca",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Hostal Lucía",
+    "ciudad": "Salamanca",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Aptos Madrid Rio",
+    "ciudad": "Madrid",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Erasmus",
+    "ciudad": "Salamanca",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Fira Centric Apartments",
+    "ciudad": "Barcelona",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Home 42",
+    "ciudad": "Madrid",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Apartamentos Candelario",
+    "ciudad": "Candelario",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Hostal Express",
+    "ciudad": "Barcelona",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Apartamentos Anais",
+    "ciudad": "Barcelona",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Hostal Lumine Suites",
+    "ciudad": "Barcelona",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Hostal Putxet",
+    "ciudad": "Barcelona",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Montserrat Apartments",
+    "ciudad": "Barcelona",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Hostal Laia",
+    "ciudad": "Barcelona",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Hotel Matilde",
+    "ciudad": "Salamanca",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Apartamentos Celestina",
+    "ciudad": "Salamanca",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Hostal Manuela",
+    "ciudad": "Madrid",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Apartamentos Vega",
+    "ciudad": "Salamanca",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Liceu Apartments",
+    "ciudad": "Barcelona",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Hey Rooms",
+    "ciudad": "Cerdanyola del Vallès",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Estudios Bordadores by Valdesierra",
+    "ciudad": "Salamanca",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Hotel Mercado",
+    "ciudad": "Salamanca",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Aptos La Brava",
+    "ciudad": "Salamanca",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Apartamentos Walden",
+    "ciudad": "Morille",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Apartamentos Margarita",
+    "ciudad": "Salamanca",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Apartamentos Vacceas",
+    "ciudad": "Salamanca",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Hostal Guzman El Bueno",
+    "ciudad": "León",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Prisma Suites",
+    "ciudad": "Salamanca",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Hostel Covent Garden",
+    "ciudad": "León",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Express Apartments",
+    "ciudad": "Barcelona",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Apartamentos Carolina",
+    "ciudad": "León",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Apartamentos Esperanza",
+    "ciudad": "Salamanca",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Hotel Gran Vía",
+    "ciudad": "Salamanca",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Hotel Barrio Húmedo",
+    "ciudad": "León",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Estudios Beatriz",
+    "ciudad": "Salamanca",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Apartamentos Delia",
+    "ciudad": "León",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Paraiso Suites",
+    "ciudad": "Valladolid",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Suite Rincón del Húmedo",
+    "ciudad": "León",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Apartamentos Lydia",
+    "ciudad": "León",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Hotel Coral Boutique",
+    "ciudad": "Girona",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Blissful Suites",
+    "ciudad": "Oporto",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Pensión Sandoval",
+    "ciudad": "León",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Apartamentos Olivia",
+    "ciudad": "Bilbao",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Altar Suites Caño Badillo",
+    "ciudad": "León",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Altar Suites Conde Luna",
+    "ciudad": "León",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "The Book Factory",
+    "ciudad": "Valladolid",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Apartamentos Identia Sport",
+    "ciudad": "León",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Hotel Villamayor",
+    "ciudad": "Villamayor",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Catedral Palace",
+    "ciudad": "Valladolid",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  },
+  {
+    "nombre": "Hotel Playa la Ñora",
+    "ciudad": "Quintueles",
+    "hora_min_inicio": "10:00",
+    "hora_checkin": "14:00"
+  }
+]

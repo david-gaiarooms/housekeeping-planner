@@ -1,5 +1,19 @@
 from datetime import datetime, timedelta
 
+def obtener_hueco_libre(ocupado, inicio_dt, fin_dt, duracion):
+    bloques = sorted(ocupado, key=lambda x: x["inicio"])
+    actual = inicio_dt
+
+    for bloque in bloques:
+        if actual + timedelta(minutes=duracion) <= bloque["inicio"]:
+            return actual
+        actual = max(actual, bloque["fin"])
+
+    if actual + timedelta(minutes=duracion) <= fin_dt:
+        return actual
+
+    return None
+
 def tiempo_desplazamiento(origen, destino, ciudad, tiempos):
     if origen == destino:
         return 0
@@ -7,26 +21,21 @@ def tiempo_desplazamiento(origen, destino, ciudad, tiempos):
     clave2 = f"{destino}-{origen}"
     return tiempos.get(ciudad, {}).get(clave1) or tiempos.get(ciudad, {}).get(clave2) or 9999
 
-def obtener_siguiente_inicio_libre(empleado, duracion, fecha, desde):
-    bloques = sorted(empleado["ocupado"], key=lambda x: x["inicio"])
-    hora_actual = max(empleado["inicio_dt"], desde)
-
-    for bloque in bloques:
-        if hora_actual + timedelta(minutes=duracion) <= bloque["inicio"]:
-            return hora_actual
-        hora_actual = max(hora_actual, bloque["fin"])
-
-    if hora_actual + timedelta(minutes=duracion) <= empleado["fin_dt"]:
-        return hora_actual
-
-    return None
-
 def planificar_turnos(hoteles, empleados, cargas, fecha_str, tiempos):
     asignaciones = []
     fecha_dt = datetime.strptime(fecha_str, "%Y-%m-%d")
 
     hoteles_dict = {h["nombre"]: h for h in hoteles}
-    dia_semana = fecha_dt.strftime("%A").lower()
+    dias_traducidos = {
+        "monday": "lunes",
+        "tuesday": "martes",
+        "wednesday": "miércoles",
+        "thursday": "jueves",
+        "friday": "viernes",
+        "saturday": "sábado",
+        "sunday": "domingo"
+    }
+    dia_semana = dias_traducidos[fecha_dt.strftime("%A").lower()]
 
     empleados_disponibles = []
     for e in empleados:
@@ -47,64 +56,77 @@ def planificar_turnos(hoteles, empleados, cargas, fecha_str, tiempos):
         ciudad = hoteles_dict[hotel]["ciudad"]
         hora_min_inicio = datetime.strptime(f"{fecha_str} {hoteles_dict[hotel]['hora_min_inicio']}", "%Y-%m-%d %H:%M")
 
-        while duracion_restante > 0:
-            posibles = [e for e in empleados_disponibles if e["ciudad"] == ciudad]
-            posibles.sort(key=lambda e: e["prioridad_hoteles"].get(hotel, 999))
+        posibles = [e for e in empleados_disponibles if e["ciudad"] == ciudad]
+        posibles.sort(key=lambda e: e["prioridad_hoteles"].get(hotel, 999))
 
-            asignado = False
+        asignado = False
 
-            for emp in posibles:
-                ultima_tarea = emp["ocupado"][-1] if emp["ocupado"] else None
-                anterior = ultima_tarea["hotel"] if ultima_tarea else hotel
-                desde = ultima_tarea["fin"] if ultima_tarea else hora_min_inicio
+        for emp in posibles:
+            acomp = None
+            ultimo_bloque = emp["ocupado"][-1] if emp["ocupado"] else None
+            hotel_anterior = ultimo_bloque["hotel"] if ultimo_bloque else hotel
+            tiempo_extra = tiempo_desplazamiento(hotel_anterior, hotel, ciudad, tiempos)
 
-                desplazamiento = tiempo_desplazamiento(anterior, hotel, ciudad, tiempos)
-                inicio_posible = obtener_siguiente_inicio_libre(emp, duracion_restante, fecha_dt, desde + timedelta(minutes=desplazamiento))
+            inicio_busqueda = max(emp["inicio_dt"], hora_min_inicio) + timedelta(minutes=tiempo_extra)
+            hueco = obtener_hueco_libre(emp["ocupado"], inicio_busqueda, emp["fin_dt"], duracion_restante)
+            if not hueco:
+                continue
 
-                if inicio_posible:
-                    tiempo_disponible = (emp["fin_dt"] - inicio_posible).total_seconds() / 60
-                    duracion_asignada = min(duracion_restante, tiempo_disponible)
+            fin_asignacion = hueco + timedelta(minutes=duracion_restante)
 
-                    if emp.get("requiere_acompanamiento", False):
-                        acomp = next(
-                            (e2 for e2 in posibles if e2 != emp and not e2["requiere_acompanamiento"] and obtener_siguiente_inicio_libre(e2, duracion_asignada, fecha_dt, desde + timedelta(minutes=desplazamiento))),
-                            None
+            if emp.get("requiere_acompanamiento", False):
+                acomp = next(
+                    (
+                        e2 for e2 in posibles
+                        if e2 != emp
+                        and not e2.get("requiere_acompanamiento", False)
+                        and obtener_hueco_libre(
+                            e2["ocupado"],
+                            max(e2["inicio_dt"], hora_min_inicio) + timedelta(minutes=tiempo_extra),
+                            e2["fin_dt"],
+                            duracion_restante
                         )
-                        if not acomp:
-                            continue
-                        acomp_inicio = obtener_siguiente_inicio_libre(acomp, duracion_asignada, fecha_dt, desde + timedelta(minutes=desplazamiento))
-                        acomp["ocupado"].append({
-                            "inicio": acomp_inicio,
-                            "fin": acomp_inicio + timedelta(minutes=duracion_asignada),
-                            "hotel": hotel
-                        })
+                    ),
+                    None
+                )
+                if not acomp:
+                    continue
+                acomp_hueco = obtener_hueco_libre(
+                    acomp["ocupado"],
+                    max(acomp["inicio_dt"], hora_min_inicio) + timedelta(minutes=tiempo_extra),
+                    acomp["fin_dt"],
+                    duracion_restante
+                )
+                acomp["ocupado"].append({"inicio": acomp_hueco, "fin": acomp_hueco + timedelta(minutes=duracion_restante), "hotel": hotel})
 
-                    emp["ocupado"].append({
-                        "inicio": inicio_posible,
-                        "fin": inicio_posible + timedelta(minutes=duracion_asignada),
-                        "hotel": hotel
-                    })
-
-                    asignaciones.append({
-                        "hotel": hotel,
-                        "empleado": emp["nombre"],
-                        "inicio": inicio_posible.strftime("%H:%M"),
-                        "duracion": duracion_asignada,
-                        "acompañado_por": acomp["nombre"] if emp.get("requiere_acompanamiento", False) else None
-                    })
-
-                    duracion_restante -= duracion_asignada
-                    asignado = True
-                    break
-
-            if not asignado:
-                asignaciones.append({
-                    "hotel": hotel,
-                    "empleado": None,
-                    "inicio": None,
-                    "duracion": duracion_restante,
-                    "nota": "No asignado por falta de disponibilidad"
+            if tiempo_extra > 0:
+                emp["ocupado"].append({
+                    "inicio": hueco - timedelta(minutes=tiempo_extra),
+                    "fin": hueco,
+                    "hotel": f"DESPLAZAMIENTO: {hotel_anterior} → {hotel}"
                 })
-                break
+
+            emp["ocupado"].append({"inicio": hueco, "fin": fin_asignacion, "hotel": hotel})
+
+            asignaciones.append({
+                "hotel": hotel,
+                "empleado": emp["nombre"],
+                "inicio": hueco.strftime("%H:%M"),
+                "duracion": duracion_restante,
+                "acompañado_por": acomp["nombre"] if acomp else None
+            })
+
+            asignado = True
+            break
+
+        if not asignado:
+            asignaciones.append({
+                "hotel": hotel,
+                "empleado": None,
+                "inicio": None,
+                "duracion": carga["duracion_min"],
+                "acompañado_por": None,
+                "nota": "No asignado por falta de disponibilidad"
+            })
 
     return asignaciones

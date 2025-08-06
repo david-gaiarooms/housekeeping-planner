@@ -1,1 +1,1982 @@
-[{"nombre": "Lucía", "ciudad": "Salamanca", "horas_trabajo": {"lunes": ["08:00", "16:00"]}, "prioridad_hoteles": {"Hotel Central": 1}, "requiere_acompanamiento": false}]
+[
+  {
+    "nombre": "Lucía 1",
+    "ciudad": "Salamanca",
+    "horas_trabajo": {
+      "lunes": [
+        "10:00",
+        "15:00"
+      ],
+      "martes": [
+        "10:00",
+        "15:00"
+      ],
+      "miércoles": [
+        "10:00",
+        "16:00"
+      ],
+      "jueves": [
+        "11:00",
+        "14:00"
+      ],
+      "viernes": [
+        "11:00",
+        "15:00"
+      ],
+      "sábado": [
+        "11:00",
+        "14:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Apartamentos Vacceas": 1,
+      "Hostal Carmen": 1,
+      "Apartamentos Celestina": 3,
+      "Hostal Gonzala": 3,
+      "Alevia": 1
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "Carlos 2",
+    "ciudad": "Salamanca",
+    "horas_trabajo": {
+      "martes": [
+        "10:00",
+        "15:00"
+      ],
+      "miércoles": [
+        "10:00",
+        "16:00"
+      ],
+      "jueves": [
+        "10:00",
+        "14:00"
+      ],
+      "viernes": [
+        "10:00",
+        "14:00"
+      ],
+      "sábado": [
+        "10:00",
+        "15:00"
+      ],
+      "domingo": [
+        "10:00",
+        "16:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Hotel Melibea": 2,
+      "Prisma Suites": 5,
+      "Apartamentos Margarita": 1,
+      "BeSalamanca": 4,
+      "Apartamentos Vacceas": 1
+    },
+    "requiere_acompanamiento": true
+  },
+  {
+    "nombre": "Ana 3",
+    "ciudad": "Salamanca",
+    "horas_trabajo": {
+      "martes": [
+        "11:00",
+        "16:00"
+      ],
+      "miércoles": [
+        "10:00",
+        "16:00"
+      ],
+      "jueves": [
+        "11:00",
+        "14:00"
+      ],
+      "viernes": [
+        "11:00",
+        "16:00"
+      ],
+      "sábado": [
+        "10:00",
+        "16:00"
+      ],
+      "domingo": [
+        "10:00",
+        "15:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Apartamentos Vacceas": 1,
+      "Hotel Melibea": 3,
+      "Apartamentos Margarita": 1,
+      "Hostal Carmen": 5,
+      "Hotel Gran Vía": 1
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "David 4",
+    "ciudad": "Salamanca",
+    "horas_trabajo": {
+      "martes": [
+        "10:00",
+        "15:00"
+      ],
+      "miércoles": [
+        "11:00",
+        "14:00"
+      ],
+      "jueves": [
+        "10:00",
+        "16:00"
+      ],
+      "viernes": [
+        "10:00",
+        "14:00"
+      ],
+      "sábado": [
+        "11:00",
+        "16:00"
+      ],
+      "domingo": [
+        "11:00",
+        "15:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Hotel Matilde": 4,
+      "Hostal Gonzala": 5,
+      "Hotel Mercado": 2,
+      "Prisma Suites": 5,
+      "Salamanca Centro Aptos": 5
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "María 5",
+    "ciudad": "Salamanca",
+    "horas_trabajo": {
+      "martes": [
+        "10:00",
+        "15:00"
+      ],
+      "miércoles": [
+        "11:00",
+        "15:00"
+      ],
+      "jueves": [
+        "11:00",
+        "14:00"
+      ],
+      "viernes": [
+        "11:00",
+        "16:00"
+      ],
+      "sábado": [
+        "10:00",
+        "15:00"
+      ],
+      "domingo": [
+        "11:00",
+        "16:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Apartamentos Celestina": 1,
+      "Hotel Melibea": 4,
+      "Prisma Suites": 2,
+      "BeSalamanca": 3,
+      "Alevia": 3
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "Juan 6",
+    "ciudad": "Salamanca",
+    "horas_trabajo": {
+      "lunes": [
+        "11:00",
+        "15:00"
+      ],
+      "martes": [
+        "11:00",
+        "15:00"
+      ],
+      "miércoles": [
+        "11:00",
+        "16:00"
+      ],
+      "jueves": [
+        "10:00",
+        "15:00"
+      ],
+      "sábado": [
+        "11:00",
+        "15:00"
+      ],
+      "domingo": [
+        "11:00",
+        "16:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Apartamentos Celestina": 2,
+      "Hotel Matilde": 4,
+      "Apartamentos Vega": 1,
+      "Estudios Beatriz": 5,
+      "Hosteria Sara": 4
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "Elena 7",
+    "ciudad": "Salamanca",
+    "horas_trabajo": {
+      "lunes": [
+        "11:00",
+        "16:00"
+      ],
+      "miércoles": [
+        "11:00",
+        "15:00"
+      ],
+      "jueves": [
+        "10:00",
+        "14:00"
+      ],
+      "viernes": [
+        "10:00",
+        "15:00"
+      ],
+      "sábado": [
+        "10:00",
+        "14:00"
+      ],
+      "domingo": [
+        "11:00",
+        "14:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Apartamentos Vega": 3,
+      "Albero": 3,
+      "Apartamentos Esperanza": 3,
+      "Aptos Calle Arriba": 5,
+      "Hosteria Sara": 1
+    },
+    "requiere_acompanamiento": true
+  },
+  {
+    "nombre": "Pedro 8",
+    "ciudad": "Salamanca",
+    "horas_trabajo": {
+      "lunes": [
+        "11:00",
+        "14:00"
+      ],
+      "martes": [
+        "10:00",
+        "15:00"
+      ],
+      "miércoles": [
+        "10:00",
+        "15:00"
+      ],
+      "jueves": [
+        "10:00",
+        "16:00"
+      ],
+      "sábado": [
+        "11:00",
+        "16:00"
+      ],
+      "domingo": [
+        "10:00",
+        "15:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Aptos Calle Arriba": 3,
+      "Apartamentos Esperanza": 3,
+      "Prisma Suites": 5,
+      "Estudios Bordadores by Valdesierra": 2,
+      "Hosteria Sara": 2
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "Laura 9",
+    "ciudad": "Salamanca",
+    "horas_trabajo": {
+      "lunes": [
+        "11:00",
+        "16:00"
+      ],
+      "martes": [
+        "11:00",
+        "16:00"
+      ],
+      "miércoles": [
+        "11:00",
+        "14:00"
+      ],
+      "viernes": [
+        "11:00",
+        "16:00"
+      ],
+      "sábado": [
+        "11:00",
+        "14:00"
+      ],
+      "domingo": [
+        "10:00",
+        "15:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Erasmus": 5,
+      "Hotel Gran Vía": 5,
+      "Prisma Suites": 4,
+      "Hostal Gonzala": 1,
+      "Hotel Melibea": 2
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "Sergio 10",
+    "ciudad": "Salamanca",
+    "horas_trabajo": {
+      "lunes": [
+        "10:00",
+        "16:00"
+      ],
+      "miércoles": [
+        "11:00",
+        "16:00"
+      ],
+      "jueves": [
+        "11:00",
+        "15:00"
+      ],
+      "viernes": [
+        "11:00",
+        "14:00"
+      ],
+      "sábado": [
+        "10:00",
+        "14:00"
+      ],
+      "domingo": [
+        "11:00",
+        "15:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Hostal Gonzala": 4,
+      "Hostal Lucía": 1,
+      "Boutique Salamanca": 1,
+      "Aptos La Brava": 1,
+      "Prisma Suites": 4
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "Sofía 11",
+    "ciudad": "Salamanca",
+    "horas_trabajo": {
+      "lunes": [
+        "11:00",
+        "15:00"
+      ],
+      "martes": [
+        "11:00",
+        "16:00"
+      ],
+      "jueves": [
+        "10:00",
+        "16:00"
+      ],
+      "viernes": [
+        "10:00",
+        "16:00"
+      ],
+      "sábado": [
+        "11:00",
+        "16:00"
+      ],
+      "domingo": [
+        "10:00",
+        "16:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Hosteria Sara": 4,
+      "Hostal Carmen": 1,
+      "Hotel Mercado": 1,
+      "Apartamentos Margarita": 2,
+      "Prisma Suites": 4
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "Javier 12",
+    "ciudad": "Salamanca",
+    "horas_trabajo": {
+      "martes": [
+        "11:00",
+        "15:00"
+      ],
+      "miércoles": [
+        "11:00",
+        "16:00"
+      ],
+      "jueves": [
+        "11:00",
+        "15:00"
+      ],
+      "viernes": [
+        "11:00",
+        "15:00"
+      ],
+      "sábado": [
+        "10:00",
+        "16:00"
+      ],
+      "domingo": [
+        "10:00",
+        "15:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Estudios Bordadores by Valdesierra": 2,
+      "Salamanca Centro Aptos": 5,
+      "Estudios Beatriz": 3,
+      "Hostal Carmen": 1,
+      "Prisma Suites": 5
+    },
+    "requiere_acompanamiento": true
+  },
+  {
+    "nombre": "Isabel 13",
+    "ciudad": "Salamanca",
+    "horas_trabajo": {
+      "lunes": [
+        "11:00",
+        "15:00"
+      ],
+      "martes": [
+        "11:00",
+        "15:00"
+      ],
+      "miércoles": [
+        "11:00",
+        "14:00"
+      ],
+      "jueves": [
+        "10:00",
+        "15:00"
+      ],
+      "sábado": [
+        "10:00",
+        "14:00"
+      ],
+      "domingo": [
+        "10:00",
+        "15:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Alevia": 4,
+      "Aptos Calle Arriba": 1,
+      "Estudios Bordadores by Valdesierra": 2,
+      "Hotel Melibea": 2,
+      "Apartamentos Margarita": 3
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "Luis 14",
+    "ciudad": "Salamanca",
+    "horas_trabajo": {
+      "martes": [
+        "11:00",
+        "16:00"
+      ],
+      "miércoles": [
+        "11:00",
+        "15:00"
+      ],
+      "jueves": [
+        "10:00",
+        "15:00"
+      ],
+      "viernes": [
+        "10:00",
+        "15:00"
+      ],
+      "sábado": [
+        "10:00",
+        "15:00"
+      ],
+      "domingo": [
+        "10:00",
+        "16:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Aptos Calle Arriba": 4,
+      "Apartamentos Esperanza": 2,
+      "Apartamentos Celestina": 4,
+      "Hotel Mercado": 2,
+      "Hotel Matilde": 3
+    },
+    "requiere_acompanamiento": true
+  },
+  {
+    "nombre": "Paula 15",
+    "ciudad": "Salamanca",
+    "horas_trabajo": {
+      "lunes": [
+        "10:00",
+        "16:00"
+      ],
+      "martes": [
+        "10:00",
+        "15:00"
+      ],
+      "miércoles": [
+        "11:00",
+        "14:00"
+      ],
+      "jueves": [
+        "11:00",
+        "14:00"
+      ],
+      "viernes": [
+        "11:00",
+        "14:00"
+      ],
+      "sábado": [
+        "10:00",
+        "16:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Apartamentos Esperanza": 4,
+      "Estudios Beatriz": 1,
+      "Estudios Bordadores by Valdesierra": 1,
+      "Hotel Mercado": 3,
+      "Alevia": 2
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "Andrés 16",
+    "ciudad": "Salamanca",
+    "horas_trabajo": {
+      "lunes": [
+        "11:00",
+        "15:00"
+      ],
+      "martes": [
+        "10:00",
+        "16:00"
+      ],
+      "miércoles": [
+        "11:00",
+        "15:00"
+      ],
+      "viernes": [
+        "10:00",
+        "14:00"
+      ],
+      "sábado": [
+        "10:00",
+        "14:00"
+      ],
+      "domingo": [
+        "10:00",
+        "16:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Erasmus": 3,
+      "Apartamentos Celestina": 4,
+      "Apartamentos Vega": 5,
+      "Hostal Lucía": 1,
+      "Prisma Suites": 1
+    },
+    "requiere_acompanamiento": true
+  },
+  {
+    "nombre": "Clara 17",
+    "ciudad": "Salamanca",
+    "horas_trabajo": {
+      "lunes": [
+        "10:00",
+        "15:00"
+      ],
+      "martes": [
+        "11:00",
+        "14:00"
+      ],
+      "miércoles": [
+        "11:00",
+        "15:00"
+      ],
+      "jueves": [
+        "10:00",
+        "14:00"
+      ],
+      "sábado": [
+        "11:00",
+        "15:00"
+      ],
+      "domingo": [
+        "10:00",
+        "14:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Boutique Salamanca": 1,
+      "Estudios Beatriz": 5,
+      "Aptos La Brava": 2,
+      "Hostal Gonzala": 4,
+      "Estudios Bordadores by Valdesierra": 2
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "Diego 18",
+    "ciudad": "Salamanca",
+    "horas_trabajo": {
+      "lunes": [
+        "11:00",
+        "14:00"
+      ],
+      "martes": [
+        "10:00",
+        "14:00"
+      ],
+      "miércoles": [
+        "11:00",
+        "15:00"
+      ],
+      "jueves": [
+        "11:00",
+        "16:00"
+      ],
+      "viernes": [
+        "10:00",
+        "16:00"
+      ],
+      "sábado": [
+        "10:00",
+        "14:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Prisma Suites": 1,
+      "Boutique Salamanca": 4,
+      "Apartamentos Celestina": 5,
+      "Hostal Carmen": 5,
+      "Hosteria Sara": 3
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "Eva 19",
+    "ciudad": "Salamanca",
+    "horas_trabajo": {
+      "lunes": [
+        "11:00",
+        "15:00"
+      ],
+      "martes": [
+        "10:00",
+        "15:00"
+      ],
+      "miércoles": [
+        "11:00",
+        "15:00"
+      ],
+      "jueves": [
+        "10:00",
+        "16:00"
+      ],
+      "viernes": [
+        "11:00",
+        "14:00"
+      ],
+      "sábado": [
+        "10:00",
+        "14:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Apartamentos Vega": 3,
+      "Hotel Matilde": 2,
+      "Hotel Mercado": 3,
+      "Apartamentos Margarita": 2,
+      "Prisma Suites": 2
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "Alberto 20",
+    "ciudad": "Salamanca",
+    "horas_trabajo": {
+      "lunes": [
+        "10:00",
+        "14:00"
+      ],
+      "martes": [
+        "11:00",
+        "15:00"
+      ],
+      "miércoles": [
+        "11:00",
+        "14:00"
+      ],
+      "jueves": [
+        "11:00",
+        "14:00"
+      ],
+      "sábado": [
+        "10:00",
+        "14:00"
+      ],
+      "domingo": [
+        "10:00",
+        "15:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Prisma Suites": 4,
+      "Estudios Beatriz": 4,
+      "Hotel Melibea": 1,
+      "Alevia": 3,
+      "Apartamentos Esperanza": 2
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "Lucía 21",
+    "ciudad": "León",
+    "horas_trabajo": {
+      "lunes": [
+        "11:00",
+        "15:00"
+      ],
+      "martes": [
+        "10:00",
+        "15:00"
+      ],
+      "jueves": [
+        "10:00",
+        "14:00"
+      ],
+      "viernes": [
+        "11:00",
+        "14:00"
+      ],
+      "sábado": [
+        "10:00",
+        "16:00"
+      ],
+      "domingo": [
+        "11:00",
+        "16:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Apartamentos Delia": 2,
+      "Apartamentos Identia Sport": 5,
+      "Apartamentos Lydia": 3,
+      "Hotel Barrio Húmedo": 1,
+      "Altar Suites Caño Badillo": 1
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "Carlos 22",
+    "ciudad": "León",
+    "horas_trabajo": {
+      "lunes": [
+        "10:00",
+        "14:00"
+      ],
+      "martes": [
+        "10:00",
+        "16:00"
+      ],
+      "miércoles": [
+        "11:00",
+        "15:00"
+      ],
+      "viernes": [
+        "10:00",
+        "15:00"
+      ],
+      "sábado": [
+        "10:00",
+        "16:00"
+      ],
+      "domingo": [
+        "10:00",
+        "16:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Apartamentos Lydia": 4,
+      "Pensión Sandoval": 2,
+      "Altar Suites Conde Luna": 4,
+      "Apartamentos Carolina": 1,
+      "Hostel Covent Garden": 1
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "Ana 23",
+    "ciudad": "León",
+    "horas_trabajo": {
+      "lunes": [
+        "10:00",
+        "14:00"
+      ],
+      "martes": [
+        "11:00",
+        "14:00"
+      ],
+      "miércoles": [
+        "10:00",
+        "14:00"
+      ],
+      "jueves": [
+        "10:00",
+        "15:00"
+      ],
+      "viernes": [
+        "11:00",
+        "16:00"
+      ],
+      "domingo": [
+        "10:00",
+        "14:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Apartamentos Carolina": 4,
+      "Suite Rincón del Húmedo": 4,
+      "Altar Suites Conde Luna": 1,
+      "Pensión Sandoval": 2,
+      "Altar Suites Caño Badillo": 5
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "David 24",
+    "ciudad": "León",
+    "horas_trabajo": {
+      "martes": [
+        "11:00",
+        "15:00"
+      ],
+      "miércoles": [
+        "11:00",
+        "14:00"
+      ],
+      "jueves": [
+        "10:00",
+        "14:00"
+      ],
+      "viernes": [
+        "10:00",
+        "15:00"
+      ],
+      "sábado": [
+        "10:00",
+        "14:00"
+      ],
+      "domingo": [
+        "11:00",
+        "15:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Hostel Covent Garden": 2,
+      "Hostal Guzman El Bueno": 1,
+      "Altar Suites Caño Badillo": 1,
+      "Apartamentos Delia": 2,
+      "Pensión Sandoval": 1
+    },
+    "requiere_acompanamiento": true
+  },
+  {
+    "nombre": "María 25",
+    "ciudad": "León",
+    "horas_trabajo": {
+      "lunes": [
+        "11:00",
+        "14:00"
+      ],
+      "miércoles": [
+        "11:00",
+        "16:00"
+      ],
+      "jueves": [
+        "10:00",
+        "14:00"
+      ],
+      "viernes": [
+        "11:00",
+        "15:00"
+      ],
+      "sábado": [
+        "10:00",
+        "14:00"
+      ],
+      "domingo": [
+        "10:00",
+        "14:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Apartamentos Delia": 1,
+      "Hostel Covent Garden": 3,
+      "Pensión Sandoval": 1,
+      "Hotel Barrio Húmedo": 5,
+      "Suite Rincón del Húmedo": 1
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "Juan 26",
+    "ciudad": "León",
+    "horas_trabajo": {
+      "lunes": [
+        "11:00",
+        "14:00"
+      ],
+      "martes": [
+        "10:00",
+        "14:00"
+      ],
+      "miércoles": [
+        "10:00",
+        "16:00"
+      ],
+      "jueves": [
+        "11:00",
+        "14:00"
+      ],
+      "viernes": [
+        "11:00",
+        "15:00"
+      ],
+      "sábado": [
+        "10:00",
+        "16:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Apartamentos Lydia": 4,
+      "Hostal Guzman El Bueno": 3,
+      "Apartamentos Identia Sport": 3,
+      "Suite Rincón del Húmedo": 2,
+      "Apartamentos Delia": 2
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "Elena 27",
+    "ciudad": "León",
+    "horas_trabajo": {
+      "lunes": [
+        "11:00",
+        "14:00"
+      ],
+      "martes": [
+        "11:00",
+        "16:00"
+      ],
+      "miércoles": [
+        "11:00",
+        "16:00"
+      ],
+      "jueves": [
+        "10:00",
+        "16:00"
+      ],
+      "viernes": [
+        "10:00",
+        "15:00"
+      ],
+      "sábado": [
+        "10:00",
+        "15:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Hotel Barrio Húmedo": 3,
+      "Hostal Guzman El Bueno": 2,
+      "Pensión Sandoval": 2,
+      "Altar Suites Caño Badillo": 3,
+      "Suite Rincón del Húmedo": 3
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "Pedro 28",
+    "ciudad": "León",
+    "horas_trabajo": {
+      "lunes": [
+        "10:00",
+        "16:00"
+      ],
+      "martes": [
+        "10:00",
+        "15:00"
+      ],
+      "miércoles": [
+        "11:00",
+        "15:00"
+      ],
+      "jueves": [
+        "10:00",
+        "14:00"
+      ],
+      "viernes": [
+        "10:00",
+        "15:00"
+      ],
+      "domingo": [
+        "10:00",
+        "14:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Hostel Covent Garden": 4,
+      "Pensión Sandoval": 1,
+      "Apartamentos Delia": 2,
+      "Apartamentos Carolina": 5,
+      "Suite Rincón del Húmedo": 2
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "Laura 29",
+    "ciudad": "León",
+    "horas_trabajo": {
+      "lunes": [
+        "10:00",
+        "16:00"
+      ],
+      "martes": [
+        "11:00",
+        "14:00"
+      ],
+      "miércoles": [
+        "11:00",
+        "15:00"
+      ],
+      "jueves": [
+        "11:00",
+        "15:00"
+      ],
+      "viernes": [
+        "10:00",
+        "16:00"
+      ],
+      "domingo": [
+        "10:00",
+        "16:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Apartamentos Identia Sport": 2,
+      "Altar Suites Conde Luna": 4,
+      "Apartamentos Delia": 5,
+      "Apartamentos Lydia": 3,
+      "Hostel Covent Garden": 1
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "Sergio 30",
+    "ciudad": "León",
+    "horas_trabajo": {
+      "lunes": [
+        "10:00",
+        "14:00"
+      ],
+      "martes": [
+        "11:00",
+        "16:00"
+      ],
+      "miércoles": [
+        "10:00",
+        "15:00"
+      ],
+      "jueves": [
+        "10:00",
+        "16:00"
+      ],
+      "viernes": [
+        "10:00",
+        "15:00"
+      ],
+      "sábado": [
+        "10:00",
+        "15:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Hostel Covent Garden": 5,
+      "Altar Suites Caño Badillo": 2,
+      "Apartamentos Carolina": 3,
+      "Apartamentos Delia": 1,
+      "Suite Rincón del Húmedo": 5
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "Lucía 31",
+    "ciudad": "Béjar",
+    "horas_trabajo": {
+      "lunes": [
+        "10:00",
+        "14:00"
+      ],
+      "martes": [
+        "11:00",
+        "16:00"
+      ],
+      "miércoles": [
+        "11:00",
+        "16:00"
+      ],
+      "jueves": [
+        "11:00",
+        "15:00"
+      ],
+      "viernes": [
+        "10:00",
+        "14:00"
+      ],
+      "sábado": [
+        "10:00",
+        "15:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Áticos La Aliseda": 5,
+      "Ronda de Navarra": 2,
+      "Estudios Sierra de Francia": 3
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "Carlos 32",
+    "ciudad": "Béjar",
+    "horas_trabajo": {
+      "martes": [
+        "11:00",
+        "14:00"
+      ],
+      "miércoles": [
+        "10:00",
+        "14:00"
+      ],
+      "jueves": [
+        "10:00",
+        "14:00"
+      ],
+      "viernes": [
+        "11:00",
+        "15:00"
+      ],
+      "sábado": [
+        "10:00",
+        "15:00"
+      ],
+      "domingo": [
+        "11:00",
+        "15:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Ronda de Navarra": 4,
+      "Estudios Sierra de Francia": 1,
+      "Áticos La Aliseda": 3
+    },
+    "requiere_acompanamiento": true
+  },
+  {
+    "nombre": "Lucía 33",
+    "ciudad": "Madrid",
+    "horas_trabajo": {
+      "lunes": [
+        "10:00",
+        "16:00"
+      ],
+      "martes": [
+        "10:00",
+        "16:00"
+      ],
+      "miércoles": [
+        "10:00",
+        "16:00"
+      ],
+      "viernes": [
+        "10:00",
+        "15:00"
+      ],
+      "sábado": [
+        "11:00",
+        "14:00"
+      ],
+      "domingo": [
+        "10:00",
+        "15:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Aptos Principe 7": 4,
+      "Aptos Madrid Rio": 4,
+      "Home 42": 3,
+      "Apartamentos Horoko": 3,
+      "Hostal Manuela": 4
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "Carlos 34",
+    "ciudad": "Madrid",
+    "horas_trabajo": {
+      "lunes": [
+        "11:00",
+        "15:00"
+      ],
+      "martes": [
+        "11:00",
+        "16:00"
+      ],
+      "jueves": [
+        "11:00",
+        "15:00"
+      ],
+      "viernes": [
+        "11:00",
+        "15:00"
+      ],
+      "sábado": [
+        "11:00",
+        "14:00"
+      ],
+      "domingo": [
+        "11:00",
+        "15:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Apartamentos Horoko": 1,
+      "Hostal Manuela": 2,
+      "Aptos Madrid Rio": 1,
+      "Aptos Principe 7": 1,
+      "Home 42": 4
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "Lucía 35",
+    "ciudad": "Barcelona",
+    "horas_trabajo": {
+      "lunes": [
+        "10:00",
+        "15:00"
+      ],
+      "martes": [
+        "10:00",
+        "14:00"
+      ],
+      "miércoles": [
+        "11:00",
+        "14:00"
+      ],
+      "jueves": [
+        "11:00",
+        "16:00"
+      ],
+      "sábado": [
+        "10:00",
+        "15:00"
+      ],
+      "domingo": [
+        "11:00",
+        "15:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Montserrat Apartments": 2,
+      "Fira Centric Apartments": 4,
+      "Hostal Putxet": 5,
+      "Hostal Express": 1,
+      "Liceu Apartments": 4
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "Carlos 36",
+    "ciudad": "Barcelona",
+    "horas_trabajo": {
+      "martes": [
+        "11:00",
+        "14:00"
+      ],
+      "miércoles": [
+        "11:00",
+        "14:00"
+      ],
+      "jueves": [
+        "10:00",
+        "15:00"
+      ],
+      "viernes": [
+        "11:00",
+        "15:00"
+      ],
+      "sábado": [
+        "11:00",
+        "14:00"
+      ],
+      "domingo": [
+        "10:00",
+        "14:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Hostal Laia": 5,
+      "Liceu Apartments": 1,
+      "Apartamentos Anais": 2,
+      "Montserrat Apartments": 3,
+      "Fira Centric Apartments": 5
+    },
+    "requiere_acompanamiento": true
+  },
+  {
+    "nombre": "Lucía 37",
+    "ciudad": "Candelario",
+    "horas_trabajo": {
+      "martes": [
+        "11:00",
+        "14:00"
+      ],
+      "miércoles": [
+        "11:00",
+        "16:00"
+      ],
+      "jueves": [
+        "11:00",
+        "14:00"
+      ],
+      "viernes": [
+        "11:00",
+        "16:00"
+      ],
+      "sábado": [
+        "10:00",
+        "16:00"
+      ],
+      "domingo": [
+        "11:00",
+        "15:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Apartamentos Candelario": 4
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "Carlos 38",
+    "ciudad": "Candelario",
+    "horas_trabajo": {
+      "lunes": [
+        "10:00",
+        "15:00"
+      ],
+      "martes": [
+        "10:00",
+        "14:00"
+      ],
+      "miércoles": [
+        "11:00",
+        "15:00"
+      ],
+      "jueves": [
+        "11:00",
+        "14:00"
+      ],
+      "sábado": [
+        "11:00",
+        "14:00"
+      ],
+      "domingo": [
+        "11:00",
+        "14:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Apartamentos Candelario": 4
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "Lucía 39",
+    "ciudad": "Cerdanyola del Vallès",
+    "horas_trabajo": {
+      "lunes": [
+        "11:00",
+        "14:00"
+      ],
+      "miércoles": [
+        "10:00",
+        "16:00"
+      ],
+      "jueves": [
+        "10:00",
+        "16:00"
+      ],
+      "viernes": [
+        "10:00",
+        "14:00"
+      ],
+      "sábado": [
+        "11:00",
+        "16:00"
+      ],
+      "domingo": [
+        "10:00",
+        "14:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Hey Rooms": 2
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "Carlos 40",
+    "ciudad": "Cerdanyola del Vallès",
+    "horas_trabajo": {
+      "lunes": [
+        "11:00",
+        "16:00"
+      ],
+      "miércoles": [
+        "11:00",
+        "15:00"
+      ],
+      "jueves": [
+        "10:00",
+        "15:00"
+      ],
+      "viernes": [
+        "10:00",
+        "15:00"
+      ],
+      "sábado": [
+        "11:00",
+        "14:00"
+      ],
+      "domingo": [
+        "10:00",
+        "16:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Hey Rooms": 2
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "Lucía 41",
+    "ciudad": "Morille",
+    "horas_trabajo": {
+      "lunes": [
+        "10:00",
+        "15:00"
+      ],
+      "martes": [
+        "11:00",
+        "14:00"
+      ],
+      "miércoles": [
+        "11:00",
+        "16:00"
+      ],
+      "jueves": [
+        "10:00",
+        "14:00"
+      ],
+      "viernes": [
+        "10:00",
+        "14:00"
+      ],
+      "sábado": [
+        "10:00",
+        "16:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Apartamentos Walden": 4
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "Carlos 42",
+    "ciudad": "Morille",
+    "horas_trabajo": {
+      "lunes": [
+        "11:00",
+        "15:00"
+      ],
+      "martes": [
+        "10:00",
+        "16:00"
+      ],
+      "miércoles": [
+        "11:00",
+        "16:00"
+      ],
+      "jueves": [
+        "10:00",
+        "16:00"
+      ],
+      "viernes": [
+        "10:00",
+        "16:00"
+      ],
+      "domingo": [
+        "11:00",
+        "14:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Apartamentos Walden": 1
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "Lucía 43",
+    "ciudad": "Valladolid",
+    "horas_trabajo": {
+      "lunes": [
+        "11:00",
+        "16:00"
+      ],
+      "martes": [
+        "10:00",
+        "14:00"
+      ],
+      "miércoles": [
+        "11:00",
+        "15:00"
+      ],
+      "jueves": [
+        "11:00",
+        "14:00"
+      ],
+      "viernes": [
+        "11:00",
+        "16:00"
+      ],
+      "domingo": [
+        "11:00",
+        "15:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Catedral Palace": 2,
+      "Paraiso Suites": 1,
+      "The Book Factory": 2
+    },
+    "requiere_acompanamiento": true
+  },
+  {
+    "nombre": "Carlos 44",
+    "ciudad": "Valladolid",
+    "horas_trabajo": {
+      "lunes": [
+        "11:00",
+        "14:00"
+      ],
+      "martes": [
+        "10:00",
+        "14:00"
+      ],
+      "miércoles": [
+        "10:00",
+        "14:00"
+      ],
+      "jueves": [
+        "10:00",
+        "16:00"
+      ],
+      "viernes": [
+        "10:00",
+        "16:00"
+      ],
+      "sábado": [
+        "11:00",
+        "14:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "The Book Factory": 2,
+      "Catedral Palace": 4,
+      "Paraiso Suites": 5
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "Lucía 45",
+    "ciudad": "Girona",
+    "horas_trabajo": {
+      "lunes": [
+        "11:00",
+        "15:00"
+      ],
+      "martes": [
+        "11:00",
+        "15:00"
+      ],
+      "miércoles": [
+        "11:00",
+        "15:00"
+      ],
+      "jueves": [
+        "10:00",
+        "14:00"
+      ],
+      "viernes": [
+        "11:00",
+        "15:00"
+      ],
+      "sábado": [
+        "11:00",
+        "14:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Hotel Coral Boutique": 3
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "Carlos 46",
+    "ciudad": "Girona",
+    "horas_trabajo": {
+      "lunes": [
+        "11:00",
+        "14:00"
+      ],
+      "martes": [
+        "11:00",
+        "14:00"
+      ],
+      "miércoles": [
+        "11:00",
+        "14:00"
+      ],
+      "viernes": [
+        "10:00",
+        "16:00"
+      ],
+      "sábado": [
+        "10:00",
+        "15:00"
+      ],
+      "domingo": [
+        "10:00",
+        "14:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Hotel Coral Boutique": 2
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "Lucía 47",
+    "ciudad": "Oporto",
+    "horas_trabajo": {
+      "lunes": [
+        "11:00",
+        "16:00"
+      ],
+      "martes": [
+        "10:00",
+        "14:00"
+      ],
+      "miércoles": [
+        "11:00",
+        "14:00"
+      ],
+      "jueves": [
+        "11:00",
+        "14:00"
+      ],
+      "sábado": [
+        "11:00",
+        "16:00"
+      ],
+      "domingo": [
+        "11:00",
+        "16:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Blissful Suites": 3
+    },
+    "requiere_acompanamiento": true
+  },
+  {
+    "nombre": "Carlos 48",
+    "ciudad": "Oporto",
+    "horas_trabajo": {
+      "martes": [
+        "10:00",
+        "16:00"
+      ],
+      "miércoles": [
+        "10:00",
+        "14:00"
+      ],
+      "jueves": [
+        "11:00",
+        "16:00"
+      ],
+      "viernes": [
+        "10:00",
+        "16:00"
+      ],
+      "sábado": [
+        "11:00",
+        "14:00"
+      ],
+      "domingo": [
+        "10:00",
+        "15:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Blissful Suites": 5
+    },
+    "requiere_acompanamiento": true
+  },
+  {
+    "nombre": "Lucía 49",
+    "ciudad": "Bilbao",
+    "horas_trabajo": {
+      "lunes": [
+        "11:00",
+        "16:00"
+      ],
+      "martes": [
+        "10:00",
+        "16:00"
+      ],
+      "miércoles": [
+        "11:00",
+        "16:00"
+      ],
+      "viernes": [
+        "11:00",
+        "14:00"
+      ],
+      "sábado": [
+        "10:00",
+        "16:00"
+      ],
+      "domingo": [
+        "10:00",
+        "14:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Apartamentos Olivia": 1
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "Carlos 50",
+    "ciudad": "Bilbao",
+    "horas_trabajo": {
+      "lunes": [
+        "11:00",
+        "14:00"
+      ],
+      "martes": [
+        "11:00",
+        "14:00"
+      ],
+      "miércoles": [
+        "11:00",
+        "14:00"
+      ],
+      "jueves": [
+        "11:00",
+        "15:00"
+      ],
+      "viernes": [
+        "10:00",
+        "15:00"
+      ],
+      "sábado": [
+        "11:00",
+        "15:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Apartamentos Olivia": 3
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "Lucía 51",
+    "ciudad": "Villamayor",
+    "horas_trabajo": {
+      "martes": [
+        "11:00",
+        "15:00"
+      ],
+      "miércoles": [
+        "11:00",
+        "14:00"
+      ],
+      "jueves": [
+        "10:00",
+        "16:00"
+      ],
+      "viernes": [
+        "10:00",
+        "16:00"
+      ],
+      "sábado": [
+        "11:00",
+        "16:00"
+      ],
+      "domingo": [
+        "10:00",
+        "14:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Hotel Villamayor": 1
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "Carlos 52",
+    "ciudad": "Villamayor",
+    "horas_trabajo": {
+      "lunes": [
+        "10:00",
+        "14:00"
+      ],
+      "miércoles": [
+        "10:00",
+        "16:00"
+      ],
+      "jueves": [
+        "11:00",
+        "16:00"
+      ],
+      "viernes": [
+        "10:00",
+        "16:00"
+      ],
+      "sábado": [
+        "10:00",
+        "16:00"
+      ],
+      "domingo": [
+        "11:00",
+        "15:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Hotel Villamayor": 5
+    },
+    "requiere_acompanamiento": true
+  },
+  {
+    "nombre": "Lucía 53",
+    "ciudad": "Quintueles",
+    "horas_trabajo": {
+      "lunes": [
+        "10:00",
+        "14:00"
+      ],
+      "miércoles": [
+        "10:00",
+        "14:00"
+      ],
+      "jueves": [
+        "10:00",
+        "15:00"
+      ],
+      "viernes": [
+        "11:00",
+        "16:00"
+      ],
+      "sábado": [
+        "10:00",
+        "14:00"
+      ],
+      "domingo": [
+        "10:00",
+        "15:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Hotel Playa la Ñora": 3
+    },
+    "requiere_acompanamiento": false
+  },
+  {
+    "nombre": "Carlos 54",
+    "ciudad": "Quintueles",
+    "horas_trabajo": {
+      "martes": [
+        "10:00",
+        "15:00"
+      ],
+      "miércoles": [
+        "11:00",
+        "15:00"
+      ],
+      "jueves": [
+        "11:00",
+        "16:00"
+      ],
+      "viernes": [
+        "11:00",
+        "16:00"
+      ],
+      "sábado": [
+        "11:00",
+        "16:00"
+      ],
+      "domingo": [
+        "11:00",
+        "14:00"
+      ]
+    },
+    "prioridad_hoteles": {
+      "Hotel Playa la Ñora": 1
+    },
+    "requiere_acompanamiento": false
+  }
+]
