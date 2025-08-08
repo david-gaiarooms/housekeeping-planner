@@ -19,7 +19,12 @@ def tiempo_desplazamiento(origen, destino, ciudad, tiempos):
         return 0
     clave1 = f"{origen}-{destino}"
     clave2 = f"{destino}-{origen}"
-    return tiempos.get(ciudad, {}).get(clave1) or tiempos.get(ciudad, {}).get(clave2) or 9999
+    ciudad_tiempos = tiempos.get(ciudad, {})
+    if clave1 in ciudad_tiempos:
+        return ciudad_tiempos[clave1]
+    if clave2 in ciudad_tiempos:
+        return ciudad_tiempos[clave2]
+    return 9999
 
 def planificar_turnos(hoteles, empleados, cargas, fecha_str, tiempos, ciudad_objetivo=None):
     asignaciones = []
@@ -165,7 +170,7 @@ def planificar_turnos(hoteles, empleados, cargas, fecha_str, tiempos, ciudad_obj
                     })
 
                 if hotel_anterior != hotel and tiempo_extra > 0:
-                            emp["ocupado"].append({
+                        emp["ocupado"].append({
                                 "inicio": inicio_real - timedelta(minutes=tiempo_extra),
                                 "fin": inicio_real,
                                 "hotel": f"DESPLAZAMIENTO: {hotel_anterior} → {hotel}",
@@ -195,6 +200,7 @@ def planificar_turnos(hoteles, empleados, cargas, fecha_str, tiempos, ciudad_obj
                             break
                         continue
                     # Verificar si solo faltan menos de 30 minutos para completar
+
                     tiempo_total_disponible = int((emp["fin_dt"] - max(emp["inicio_dt"], hora_min_inicio, emp["ocupado"][-1]["fin"] if emp["ocupado"] else inicio_busqueda)).total_seconds() / 60)
                     if 0 < tiempo_total_disponible < duracion_total and (duracion_total - tiempo_total_disponible) < 30:
                         inicio_real = emp["fin_dt"] - timedelta(minutes=tiempo_total_disponible)
